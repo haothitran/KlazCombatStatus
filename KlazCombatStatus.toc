@@ -1,4 +1,4 @@
-## Interface: 70300
+## Interface: 80000
 ## Title: Klaz|cff1994ffCombatStatus|r
 ## Author: Klaz
 ## Notes: Display text indicator for when player's combat status changes.
