@@ -3,6 +3,5 @@
 ## Author: Klaz
 ## Notes: Display text indicator for when player's combat status changes.
 
-Localization.lua
 Config.lua
 CombatStatus.lua

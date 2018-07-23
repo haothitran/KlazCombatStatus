@@ -1,6 +1,5 @@
 local addon, ns = ...
 local C = ns.C
-local L = ns.L
 
 --------------------------------------------------------------------------------
 -- // COMBAT STATUS
@@ -24,9 +23,9 @@ f:RegisterEvent('PLAYER_REGEN_DISABLED')
 f:SetScript('OnEvent', function(self, event, subev, arg2, arg3)
   -- leaving combat
 	if event == 'PLAYER_REGEN_ENABLED' then
-		s:AddMessage(L.COMBAT_LEAVE, 0, 1, 0)
+		s:AddMessage('-- '..COMBAT, 0, 1, 0)
   -- entering combat
 	elseif event == 'PLAYER_REGEN_DISABLED' then
-		s:AddMessage(L.COMBAT_ENTER, 1, 0, 0)
+		s:AddMessage('++ '..COMBAT, 1, 0, 0)
 	end
 end)
