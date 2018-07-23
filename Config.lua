@@ -6,7 +6,7 @@ ns.C = C
 -- // CONFIGURATION
 --------------------------------------------------------------------------------
 
-C.Combat = {
+C.CombatStatus = {
   ['Position'] = {'CENTER', UIParent, 'CENTER', 0, -120},
   -- position = {point, relativeTo, relativePoint, xOffset, yOffset}
   ['Font'] = STANDARD_TEXT_FONT,  -- font family

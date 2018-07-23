@@ -7,16 +7,16 @@ local L = ns.L
 --------------------------------------------------------------------------------
 
 local s = CreateFrame('ScrollingMessageFrame', 'KlazCombatStatus', UIParent)
-s:SetPoint(unpack(C.Combat.Position))
+s:SetPoint(unpack(C.CombatStatus.Position))
 s:SetWidth(200)
-s:SetHeight(C.Combat.FontSize)
-s:SetFont(C.Combat.Font, C.Combat.FontSize, C.Combat.FontStyle)
+s:SetHeight(C.CombatStatus.FontSize)
+s:SetFont(C.CombatStatus.Font, C.CombatStatus.FontSize, C.CombatStatus.FontStyle)
 s:SetShadowOffset(0, 0)
 s:SetShadowColor(0, 0, 0, 0)
-s:SetJustifyH(C.Combat.Justify)
+s:SetJustifyH(C.CombatStatus.Justify)
 s:SetMaxLines(1)
-s:SetTimeVisible(C.Combat.VisibleTime)
-s:SetFadeDuration(C.Combat.FadeTime)
+s:SetTimeVisible(C.CombatStatus.VisibleTime)
+s:SetFadeDuration(C.CombatStatus.FadeTime)
 
 local f = CreateFrame('Frame')
 f:RegisterEvent('PLAYER_REGEN_ENABLED')
