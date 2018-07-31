@@ -1,21 +1,30 @@
-local addon, ns = ...
-local C = ns.C
-
 --------------------------------------------------------------------------------
 -- // COMBAT STATUS
 --------------------------------------------------------------------------------
 
+local position = {'CENTER', UIParent, 'CENTER', 0, -120}
+local font = STANDARD_TEXT_FONT   -- font family
+local fontSize = 12               -- font size
+local fontStyle = 'THINOUTLINE'   -- font style
+local textAlign = 'CENTER'        -- text justification
+local visibletime = 2             -- how long indicator is visible
+local fadeTime = .3								-- how long it takes for indicator to fade
+
+--------------------------------------------------------------------------------
+-- // STATUS FRAME
+--------------------------------------------------------------------------------
+
 local s = CreateFrame('ScrollingMessageFrame', 'KlazCombatStatus', UIParent)
-s:SetPoint(unpack(C.CombatStatus.Position))
+s:SetPoint(unpack(position))
 s:SetWidth(200)
-s:SetHeight(C.CombatStatus.FontSize)
-s:SetFont(C.CombatStatus.Font, C.CombatStatus.FontSize, C.CombatStatus.FontStyle)
+s:SetHeight(fontSize)
+s:SetFont(font, fontSize, fontStyle)
 s:SetShadowOffset(0, 0)
 s:SetShadowColor(0, 0, 0, 0)
-s:SetJustifyH(C.CombatStatus.Justify)
+s:SetJustifyH(textAlign)
 s:SetMaxLines(1)
-s:SetTimeVisible(C.CombatStatus.VisibleTime)
-s:SetFadeDuration(C.CombatStatus.FadeTime)
+s:SetTimeVisible(visibletime)
+s:SetFadeDuration(fadeTime)
 
 local f = CreateFrame('Frame')
 f:RegisterEvent('PLAYER_REGEN_ENABLED')
