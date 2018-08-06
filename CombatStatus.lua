@@ -5,7 +5,7 @@
 local position = {"CENTER", UIParent, "CENTER", 0, -120}
 local font = STANDARD_TEXT_FONT   -- font family
 local fontSize = 12               -- font size
-local fontStyle = "THINOUTLINE"   -- font style
+local fontStyle = "OUTLINE"       -- font style
 local textAlign = "CENTER"        -- text justification
 local visibletime = 2             -- how long indicator is visible
 local fadeTime = .3								-- how long it takes for indicator to fade
