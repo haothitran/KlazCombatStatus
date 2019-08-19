@@ -2,7 +2,7 @@
 
 A World of Warcraft add-on to display a text indicator for when player's combat status changes.
 
-There are no in-game options. Settings are hard-coded.
+Use the command `/klazcombatstatus` to see some in-game options. All other settings are hard-coded.
 
 ## Installation
 

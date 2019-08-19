@@ -1,6 +1,8 @@
-## Interface: 80000
+## Interface: 80200
 ## Title: Klaz|cff1994ffCombatStatus|r
 ## Author: Klaz
-## Notes: Display text indicator for when player's combat status changes.
+## Notes: Display text indicator for when player's combat status changes. (/klazcombatstatus)
+## SavedVariables: KlazCombatStatusDB
 
+Config.lua
 CombatStatus.lua
