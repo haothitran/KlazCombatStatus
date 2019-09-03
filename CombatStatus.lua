@@ -71,11 +71,11 @@ anchor:SetScript('OnDragStop', function(self)
   self:SetUserPlaced(false)
 
   point, relativeTo, relativePoint, xOffset, yOffset = self:GetPoint(1)
-    if relativeTo then
-      relativeTo = relativeTo:GetName();
-    else
-      relativeTo = self:GetParent():GetName();
-    end
+  if relativeTo then
+    relativeTo = relativeTo:GetName();
+  else
+    relativeTo = self:GetParent():GetName();
+  end
 
   C.UserPlaced.Point = point
   C.UserPlaced.RelativeTo = relativeTo
@@ -116,15 +116,15 @@ end)
 --------------------------------------------------------------------------------
 
 SlashCmdList.KLAZCOMBATSTATUS = function (msg, editbox)
-  if (string.lower(msg) == 'reset') then
+  if string.lower(msg) == 'reset' then
     KlazCombatStatusDB = C.Position
     ReloadUI()
-  elseif (string.lower(msg) == 'unlock') then
+  elseif string.lower(msg) == 'unlock' then
     if not anchor:IsShown() then
       anchor:Show()
       print('|cff1994ffKlazCombatStatus|r |cff00ff00Unlocked.|r')
     end
-  elseif (string.lower(msg) == 'lock') then
+  elseif string.lower(msg) == 'lock' then
     anchor:Hide()
     print('|cff1994ffKlazCombatStatus|r |cffff0000Locked.|r')
   else
