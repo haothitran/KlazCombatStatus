@@ -1,4 +1,4 @@
-## Interface: 90001
+## Interface: 90002
 ## Title: Klaz|cff1994ffCombatStatus|r
 ## Author: Klaz
 ## Notes: Display text indicator for when player's combat status changes. (/klazcombatstatus)
