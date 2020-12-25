@@ -4,6 +4,16 @@ A World of Warcraft add-on to display a text indicator for when player's combat 
 
 Use the command `/klazcombatstatus` to see some in-game options. All other settings are hard-coded.
 
+## Screenshots
+
+### In Combat
+
+![](https://raw.githubusercontent.com/haothitran/KlazCombatStatus/master/Screenshots/ScreenshotCombat.jpg)
+
+### Out of Combat
+
+![](https://raw.githubusercontent.com/haothitran/KlazCombatStatus/master/Screenshots/ScreenshotOutOfCombat.jpg)
+
 ## Installation
 
 1. Backup `World of Warcraft\_retail_\Interface` and `World of Warcraft\_retail_\WTF` folders. Just in case.
